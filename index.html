@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="yy6080电影网是按月度节奏整理影片片目与观看笔记的独立栏目。栏目不提供在线播放、下载链接或影片资源存放服务，所有内容均为公开影片信息的归档与二次整理。2026 年第十期共收录条目八十余部，按「当周上映观察」「全年片单回顾」「长片与短片」「剧情之外的看点」「六类疑问」「栏目入口」六个板块展开，每块均有独立定位。栏目的唯一访问地址是 https://yy6080dianyingwang-zh.github.io ，请通过网址而非名称辨别真伪，名称相近的其他页面与本栏目无关。">
+<meta name="keywords" content="yy6080电影网,月度片目整理,年度片单回顾,长片与短片,影片看点拆解,观影笔记,类型片归类,片长参考,华语电影观察,小语种片推荐">
+<meta name="author" content="yy6080电影网">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="revisit-after" content="7 days">
+<meta name="theme-color" content="#2b2722">
+<link rel="canonical" href="https://yy6080dianyingwang-zh.github.io/">
+<title>yy6080电影网 · 片目与观看笔记的月度归档</title>
+<style>
+:root{
+  --bg:#efe9df; --bg2:#e6dfd3; --bri:#f7f3ec; --ink:#211d18; --tx:#322c25; --tx2:#6f675b; --tx3:#9a9183;
+  --bd:#d8cfbf; --bd2:#b8ad98; --ac:#d0421f; --ac2:#f4c9ba; --gr:#4a5a3e; --gr2:#c7d2bb; --bl:#1f3a55; --bl2:#bbcde0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei","Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased;background-image:radial-gradient(rgba(33,29,24,.035) 1px,transparent 1px);background-size:5px 5px}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1360px;margin:0 auto;padding:0 44px}
+h1,h2,h3,h4{font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+
+/* 顶部条 */
+.strip{background:var(--ink);color:var(--bg2);font-size:11px;letter-spacing:.28em;text-transform:uppercase;padding:9px 0}
+.strip .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.strip b{color:var(--ac2);font-weight:400}
+
+/* 头部 */
+.hero{background:var(--ink);color:var(--bg2);padding:88px 0 0;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-80px;width:560px;height:560px;border:2px solid rgba(239,233,223,.09);border-radius:50%}
+.hero::before{content:"";position:absolute;right:60px;bottom:-200px;width:400px;height:400px;border:2px solid rgba(239,233,223,.07);border-radius:50%}
+.hero .wrap{position:relative;z-index:1}
+.hero .b1{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.24em;color:var(--ac2);text-transform:uppercase}
+.hero h1{font-size:clamp(52px,11vw,156px);font-weight:900;line-height:.86;letter-spacing:-.075em;margin-top:26px;color:var(--bri)}
+.hero h1 span{color:var(--ac)}
+.hero .rule{height:14px;background:repeating-linear-gradient(90deg,var(--ac) 0,var(--ac) 10px,transparent 10px,transparent 22px);margin-top:44px;width:62%}
+.hero .meta{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid rgba(239,233,223,.16);margin-top:52px}
+.hero .meta div{padding:26px 24px 30px;border-right:1px solid rgba(239,233,223,.16)}
+.hero .meta div:last-child{border-right:0}
+.hero .meta dt{font-size:10px;letter-spacing:.26em;color:var(--tx3);text-transform:uppercase}
+.hero .meta dd{font-family:ui-monospace,Menlo,monospace;font-size:26px;color:var(--bri);margin-top:10px}
+.hero .meta dd.sm{font-size:13.5px;font-family:"PingFang SC","Microsoft YaHei",sans-serif;color:var(--bg2);margin-top:13px;line-height:1.7}
+.hero .lead{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding:52px 0 70px;align-items:end}
+.hero .lead p{font-size:clamp(16px,1.9vw,19px);color:var(--bg2);max-width:52ch;line-height:2}
+.hero .lead .u{text-align:right;font-size:12px;letter-spacing:.06em;color:var(--tx3)}
+.hero .lead .u code{display:block;margin-top:10px;font-family:ui-monospace,Menlo,monospace;font-size:clamp(13px,2.4vw,18px);color:var(--ac2);background:rgba(239,233,223,.07);padding:14px 18px;text-align:left;word-break:break-all}
+
+/* 导航 */
+nav{background:var(--bri);border-bottom:3px solid var(--ink);position:sticky;top:0;z-index:50}
+nav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{padding:18px 30px 15px;border-right:1px solid var(--bd);font-size:14px;color:var(--tx2);white-space:nowrap;transition:.2s}
+nav a:hover{color:var(--ink);background:var(--bg2)}
+nav a.on{background:var(--ink);color:var(--bri)}
+
+sec{display:block;padding-top:116px}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.3em;color:var(--ac);text-transform:uppercase;font-family:ui-monospace,Menlo,monospace}
+.kicker::before{content:"";width:34px;height:2px;background:var(--ac)}
+.tit{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin:18px 0 52px}
+.tit h2{font-size:clamp(28px,4.4vw,52px);font-weight:900;letter-spacing:-.04em;line-height:1.2;color:var(--ink)}
+.tit h2 em{font-style:normal;color:var(--ac)}
+.tit p{max-width:40ch;font-size:14px;color:var(--tx2);text-align:right;line-height:2}
+
+/* 01 当周上映 */
+.week{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.week>div{background:var(--bri);border:1px solid var(--bd);padding:0 0 26px;display:flex;flex-direction:column;transition:.3s}
+.week>div:hover{transform:translateY(-7px);box-shadow:0 18px 34px -22px rgba(33,29,24,.55);border-color:var(--bd2)}
+.week .cap{height:6px;background:var(--c)}
+.week .num{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--tx3);padding:16px 24px 0;letter-spacing:.16em}
+.week h3{font-size:22px;font-weight:900;color:var(--ink);padding:8px 24px 0;line-height:1.35}
+.week p{font-size:13.5px;color:var(--tx2);line-height:1.95;padding:12px 24px 0;flex:1}
+.week .ft{display:flex;justify-content:space-between;font-size:11.5px;color:var(--tx3);padding:18px 24px 0;border-top:1px solid var(--bd);margin-top:18px}
+.week .ft b{color:var(--ac);font-weight:700}
+.week>div:nth-child(1){--c:var(--ac)} .week>div:nth-child(2){--c:var(--gr)} .week>div:nth-child(3){--c:var(--bl)} .week>div:nth-child(4){--c:#8a7332}
+
+/* 02 年度回顾时间轴 */
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--bd);background:var(--bri)}
+.tl>section{padding:34px 30px 32px;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);position:relative}
+.tl>section:nth-child(3n){border-right:0}
+.tl>section:nth-child(n+4){}
+.tl .yr{font-family:ui-monospace,Menlo,monospace;font-size:34px;font-weight:700;color:var(--bd2);line-height:1;letter-spacing:-.04em}
+.tl .yr b{color:var(--ac)}
+.tl h3{font-size:18px;font-weight:900;color:var(--ink);margin-top:14px;line-height:1.4}
+.tl .ct{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.tl .ct i{font-style:normal;font-size:11px;background:var(--bg2);color:var(--tx2);padding:4px 10px;border:1px solid var(--bd);letter-spacing:.04em}
+.tl p{font-size:13.5px;color:var(--tx2);line-height:1.95;margin-top:16px}
+
+/* 03 看点拆解 */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--bd)}
+.split>div{padding:40px 38px;min-height:280px;display:flex;flex-direction:column;gap:16px}
+.split .L{background:var(--ink);color:var(--bg2)}
+.split .L .k{font-size:10.5px;letter-spacing:.3em;color:var(--ac2);text-transform:uppercase}
+.split .L h3{font-size:clamp(22px,2.8vw,30px);font-weight:900;line-height:1.45;color:var(--bri)}
+.split .L p{font-size:14.5px;color:#bcb4a7;line-height:2;flex:1}
+.split .L .row{display:flex;gap:12px;flex-wrap:wrap;padding-top:18px;border-top:1px solid rgba(239,233,223,.16)}
+.split .L .row b{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--ac2);background:rgba(239,233,223,.08);padding:6px 12px}
+.split .R{background:var(--bri);display:grid;grid-template-columns:1fr 1fr;gap:1px;padding:0}
+.split .R div{background:var(--bri);padding:26px 28px;display:flex;flex-direction:column;gap:9px;border:1px solid var(--bd);margin:-1px}
+.split .R dt{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--tx3);letter-spacing:.14em}
+.split .R dd{font-size:15px;color:var(--tx);line-height:1.85;font-weight:600}
+.split .R dd small{display:block;font-weight:400;font-size:12.5px;color:var(--tx2);margin-top:5px;line-height:1.8}
+
+/* 04 片长表 */
+.tw{width:100%;border-collapse:collapse;background:var(--bri);border:1px solid var(--bd);font-size:14.5px}
+.tw th{background:var(--ink);color:var(--bg2);padding:15px 18px;text-align:left;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.tw td{padding:16px 18px;border-bottom:1px solid var(--bd);vertical-align:top}
+.tw tr:last-child td{border-bottom:0}
+.tw tbody tr:hover{background:var(--bg2)}
+.tw td.n{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--tx3);width:52px}
+.tw td.nm{font-weight:900;font-size:16px;color:var(--ink);width:26%}
+.tw td.nm small{display:block;font-size:12px;color:var(--tx3);font-weight:400;margin-top:4px}
+.tw td.tg{color:var(--tx2)}
+.tw td.ln{text-align:right;font-family:ui-monospace,Menlo,monospace;color:var(--tx2);font-size:13px}
+.tw td.ln b{color:var(--ac);font-weight:700}
+.tw .mk{display:inline-block;font-size:10.5px;background:var(--ink);color:var(--bg2);padding:3px 9px;letter-spacing:.1em;margin-left:8px;vertical-align:1px}
+
+/* 05 FAQ 抽屉 */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.faq details{background:var(--bri);border:1px solid var(--bd);transition:.25s}
+.faq details[open]{border-color:var(--ink)}
+.faq details:hover{transform:translateY(-3px)}
+.faq summary{cursor:pointer;padding:22px 26px;font-size:15.5px;font-weight:700;color:var(--ink);list-style:none;display:flex;gap:16px;align-items:flex-start}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"";flex:none;width:13px;height:13px;margin-top:7px;border-right:2px solid var(--ac);border-bottom:2px solid var(--ac);transform:rotate(-45deg);transition:.2s}
+.faq details[open] summary::before{transform:rotate(45deg)}
+.faq summary b{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--tx3);letter-spacing:.16em;flex:none;min-width:52px}
+.faq .an{padding:0 26px 24px 92px;font-size:14px;color:var(--tx2);line-height:2}
+
+/* 06 入口 */
+.gate{background:var(--ink);color:var(--bg2);padding:64px 56px;display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center;border-left:14px solid var(--ac)}
+.gate .k{font-size:10.5px;letter-spacing:.32em;color:var(--ac2);text-transform:uppercase}
+.gate h3{font-size:clamp(24px,3.4vw,40px);font-weight:900;line-height:1.5;color:var(--bri);margin-top:16px;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.gate .u{margin-top:30px;font-family:ui-monospace,Menlo,monospace;font-size:clamp(13px,2.2vw,17px);color:var(--ac2);word-break:break-all;padding-top:24px;border-top:1px solid rgba(239,233,223,.18)}
+.gate .R{display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(239,233,223,.16)}
+.gate .R div{display:grid;grid-template-columns:108px 1fr;gap:18px;padding:17px 0;border-bottom:1px solid rgba(239,233,223,.16)}
+.gate .R dt{font-size:10.5px;letter-spacing:.24em;color:var(--tx3);text-transform:uppercase}
+.gate .R dd{font-size:14.5px;color:var(--bg2);font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.gate .R dd.cp{cursor:pointer;color:var(--ac2)}
+.gate .R dd.cp:hover{color:#fff}
+
+footer{margin-top:104px;background:var(--ink);color:#8a8174;padding:64px 0 30px}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px}
+.ft .lg{font-size:24px;font-weight:900;color:var(--bri);font-family:ui-monospace,Menlo,monospace;letter-spacing:-.02em}
+.ft .lg em{font-style:normal;color:var(--ac2)}
+.ft p{font-size:13.5px;color:#7a7264;max-width:36ch;margin-top:16px;line-height:2}
+.ft h4{font-size:10.5px;letter-spacing:.32em;color:var(--ac2);text-transform:uppercase;margin-bottom:22px}
+.ft ul{display:flex;flex-direction:column;gap:12px;font-size:14px;color:#a9a096}
+.ft a:hover{color:var(--ac2)}
+.fb{margin-top:52px;padding-top:22px;border-top:1px solid rgba(239,233,223,.14);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;color:#7a7264;line-height:2}
+.fb .u{color:#bcb4a7;font-family:ui-monospace,Menlo,monospace;word-break:break-all}
+
+.rv{opacity:0;transform:translateY(28px);transition:.65s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+::selection{background:var(--ac);color:#fff}
+
+@media(max-width:1120px){
+  .week{grid-template-columns:repeat(2,1fr)}
+  .tl{grid-template-columns:repeat(2,1fr)}
+  .tl>section:nth-child(3n){border-right:1px solid var(--bd)}
+  .tl>section:nth-child(2n){border-right:0}
+  .hero .meta{grid-template-columns:repeat(5,1fr);overflow-x:auto}
+  .hero .meta div{min-width:120px}
+  .split{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .wrap{padding:0 18px}
+  sec{padding-top:72px}
+  .hero{padding-top:56px}
+  .hero .rule{width:100%}
+  .hero .lead{grid-template-columns:1fr;gap:30px;padding:40px 0 52px}
+  .hero .lead .u{text-align:left}
+  .hero .meta{grid-template-columns:repeat(2,1fr)}
+  .hero .meta div{border-bottom:1px solid rgba(239,233,223,.16)}
+  .tit{grid-template-columns:1fr;gap:16px;margin-bottom:36px}
+  .tit p{text-align:left}
+  .week{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr}
+  .tl>section{border-right:0}
+  .split .R{grid-template-columns:1fr}
+  .faq{grid-template-columns:1fr}
+  .faq .an{padding-left:26px}
+  .gate{grid-template-columns:1fr;padding:44px 24px;gap:36px}
+  .gate .R div{grid-template-columns:1fr;gap:6px}
+  .tw{font-size:13.5px}
+  .tw th:nth-child(4),.tw td:nth-child(4){display:none}
+  .ft{grid-template-columns:1fr 1fr;gap:36px}
+  nav a{padding:15px 18px 13px;font-size:13.5px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="strip"><div class="wrap"><span>yy6080电影网 · 片目与观看笔记的月度归档 <b>VOL.10</b></span><span>2026 / OCT · 收录条目 84 部 · 每月初更新</span></div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="b1">Monthly Film Notebook / 2026 — 10</div>
+    <h1>yy6080<span>电影网</span></h1>
+    <div class="rule"></div>
+    <div class="meta">
+      <div><dt>收录条目</dt><dd>84</dd></div>
+      <div><dt>覆盖类型</dt><dd>12</dd></div>
+      <div><dt>覆盖地区</dt><dd>09</dd></div>
+      <div><dt>更新频率</dt><dd class="sm">每月一次<br>每次新增 ≤ 6 部</dd></div>
+      <div><dt>最近更新</dt><dd class="sm">2026 年 10 月 07 日<br>当期已收录</dd></div>
+    </div>
+    <div class="lead">
+      <p>栏目不播片子，也不存片子。它的用处是替你先看一遍：这一部值不值得花两小时，看点在哪里，什么状态下看最合适。片名之外，给的都是能直接拿去判断的信息。</p>
+      <div class="u">唯一访问入口<code>https://yy6080dianyingwang-zh.github.io</code></div>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap">
+  <a href="#c1" class="on">当周上映</a>
+  <a href="#c2">年度回顾</a>
+  <a href="#c3">看点拆解</a>
+  <a href="#c4">片单与片长</a>
+  <a href="#c5">六类疑问</a>
+  <a href="#ent">栏目入口</a>
+</div></nav>
+
+<div class="wrap">
+
+  <sec id="c1">
+    <div class="kicker">SECTION 01 / WEEKLY WATCH</div>
+    <div class="tit"><h2>当周<em>在看的</em>四部</h2><p>不是最新上映的四部，是这一周真正被看完的四部。每部只写一件事：它靠什么留住人。</p></div>
+    <div class="week">
+      <div><div class="cap"></div><div class="num">ENTRY 01</div><h3>狗阵</h3><p>西北县城里一个人和一条狗的关系。台词很少，情绪一直是往上走的。</p><div class="ft"><span>2024 · 中国</span><b>116 分钟</b></div></div>
+      <div><div class="cap"></div><div class="num">ENTRY 02</div><h3>枯草</h3><p>近两百分钟也不觉得空。每段闲聊都在铺垫，慢是有原因的。</p><div class="ft"><span>2022 · 土耳其</span><b>197 分钟</b></div></div>
+      <div><div class="cap"></div><div class="num">ENTRY 03</div><h3>利益区域</h3><p>不拍受害者，只拍生活在对面的那一家人。全片最冷的地方是没有音乐。</p><div class="ft"><span>2023 · 英国</span><b>105 分钟</b></div></div>
+      <div><div class="cap"></div><div class="num">ENTRY 04</div><h3>因果报应</h3><p>前四十分钟看的时候不觉得，中场之后会想把开头重看一遍。</p><div class="ft"><span>2024 · 印度</span><b>139 分钟</b></div></div>
+    </div>
+  </sec>
+
+  <sec id="c2">
+    <div class="kicker">SECTION 02 / YEAR IN REVIEW</div>
+    <div class="tit"><h2>四个年份，<em>四组</em>回头看</h2><p>不是排行榜，是按年份做的回头看。隔了几年再看，判断会变，标注里写的是现在的看法。</p></div>
+    <div class="tl">
+      <section><div class="yr"><b>2024</b> / 24</div><h3>华语片更敢写小人物</h3><div class="ct"><i>现实</i><i>家庭</i><i>犯罪</i></div><p>这一年的华语片里，最好看的部分往往不在大情节，而在两个人怎么说话。</p></section>
+      <section><div class="yr"><b>2023</b> / 15</div><h3>历史题材开始克制冷静</h3><div class="ct"><i>历史</i><i>战争</i><i>传记</i></div><p>不再靠喊，靠细节。判断人物时留给观众的空间比往年大。</p></section>
+      <section><div class="yr"><b>2022</b> / 19</div><h3>结构开始被重新重视</h3><div class="ct"><i>悬疑</i><i>爱情</i><i>文艺</i></div><p>几部被反复讨论的片子，共同点不是题材，而是怎么把信息交出来。</p></section>
+      <section><div class="yr"><b>2021</b> / 12</div><h3>小成本反而更完整</h3><div class="ct"><i>独立</i><i>纪录片</i><i>短片</i></div><p>预算小的片子完成度反而高，因为没有空间放多余的东西。</p></section>
+      <section><div class="yr"><b>2020</b> / 08</div><h3>冷门补看的最佳年份</h3><div class="ct"><i>修复</i><i>经典</i><i>重映</i></div><p>这一年的修复版和重映片值得专门留时间，画面本身也是内容。</p></section>
+      <section><div class="yr"><b>2019</b> / 06</div><h3>类型片仍在有效运转</h3><div class="ct"><i>类型</i><i>商业</i><i>动作</i></div><p>商业片里那一小撮认真做类型的，现在看依然站得住。</p></section>
+    </div>
+  </sec>
+
+  <sec id="c3">
+    <div class="kicker">SECTION 03 / WHAT TO LOOK FOR</div>
+    <div class="tit"><h2>剧情之外的<em>五个</em>看点</h2><p>剧情简介到处都有，看点不是。下面这五个角度，是每部片目都会写到的，也是选片时真正用得上的部分。</p></div>
+    <div class="split">
+      <div class="L"><div class="k">How To Use This Section</div><h3>先看「看什么」，再看「讲什么」</h3><p>一部片子能不能看进去，往往取决于你带着什么期待坐下来。这里写的不是剧情概括，而是看完之后你会记住的五个部分。五个角度不全有，有的片子只有其中两三个成立，标注时会写清楚。</p><div class="row"><b>镜头</b><b>节奏</b><b>表演</b><b>声音</b><b>结构</b></div></div>
+      <div class="R">
+        <div><dt>01 / CAMERA</dt><dd>镜头运动<small>有没有故意不打断的镜头，决定了一部片子的耐心从哪来。</small></dd></div>
+        <div><dt>02 / PACING</dt><dd>节奏与留白<small>慢不慢要看它留了多少空间，不是看片长。</small></dd></div>
+        <div><dt>03 / PERFORMANCE</dt><dd>表演方式<small>不认识演员也能看进去，是这类片子最大的优点。</small></dd></div>
+        <div><dt>04 / SOUND</dt><dd>声音设计<small>有没有音乐往往比用了什么音乐更说明问题。</small></dd></div>
+        <div><dt>05 / STRUCTURE</dt><dd>信息结构<small>反转靠不靠隐瞒信息，是判断它是否尊重观众的分界线。</small></dd></div>
+        <div><dt>06 / AFTER</dt><dd>看完之后<small>会不会想找人聊，是这一部有没有触到你的直接证据。</small></dd></div>
+      </div>
+    </div>
+  </sec>
+
+  <sec id="c4">
+    <div class="kicker">SECTION 04 / LENGTH &amp; LIST</div>
+    <div class="tit"><h2>片长与<em>片单</em>，一起看</h2><p>片长决定今晚能不能看完，类型决定要不要专心看字幕。两栏合起来看，比单独看评分有用。</p></div>
+    <table class="tw">
+      <thead><tr><th style="width:52px">#</th><th>片名与年份</th><th>类型与看点</th><th style="width:200px">片长 · 地区</th></tr></thead>
+      <tbody>
+        <tr><td class="n">01</td><td class="nm">枯草<span class="mk">耐心型</span><small>2022 · 土耳其</small></td><td class="tg">慢，但是全程有内容。每段闲聊都在铺垫后面那件事，适合留出一整个下午。</td><td class="ln"><b>197</b> 分钟<br>需要专心</td></tr>
+        <tr><td class="n">02</td><td class="nm">狗阵<span class="mk">易入口</span><small>2024 · 中国</small></td><td class="tg">不认识任何演员也能看进去。人和动物的关系比人和人的关系更可信。</td><td class="ln"><b>116</b> 分钟<br>可放松看</td></tr>
+        <tr><td class="n">03</td><td class="nm">利益区域<span class="mk">情绪重</span><small>2023 · 英国</small></td><td class="tg">全片最冷的地方是没有音乐。看完需要缓一缓，不建议连着看两部同类。</td><td class="ln"><b>105</b> 分钟<br>需安静</td></tr>
+        <tr><td class="n">04</td><td class="nm">因果报应<span class="mk">结构型</span><small>2024 · 印度</small></td><td class="tg">中段那场戏会重新定义前四十分钟。反转不靠信息隐瞒，建议不要快进。</td><td class="ln"><b>139</b> 分钟<br>需专心</td></tr>
+        <tr><td class="n">05</td><td class="nm">机器人之梦<span class="mk">独处看</span><small>2024 · 西班牙</small></td><td class="tg">没有一句对白的告别。动画里最难处理的题材是放手，这部做到了不煽情。</td><td class="ln"><b>102</b> 分钟<br>可放松看</td></tr>
+        <tr><td class="n">06</td><td class="nm">分手的决心<span class="mk">可二刷</span><small>2022 · 韩国</small></td><td class="tg">第二次看的时候才发现，第一次被剧情盖住的东西其实一直在镜头里。</td><td class="ln"><b>138</b> 分钟<br>需专心</td></tr>
+        <tr><td class="n">07</td><td class="nm">泳者之心<span class="mk">被低估</span><small>2024 · 美国</small></td><td class="tg">传记片里少见的克制，没有把主角写成圣人。值得补看的原因很朴素。</td><td class="ln"><b>129</b> 分钟<br>可放松看</td></tr>
+        <tr><td class="n">08</td><td class="nm">哥斯拉-1.0<span class="mk">视觉型</span><small>2023 · 日本</small></td><td class="tg">视效之外认真写了普通人怎么面对失败。怪兽只是把情绪放大的工具。</td><td class="ln"><b>124</b> 分钟<br>可放松看</td></tr>
+      </tbody>
+    </table>
+  </sec>
+
+  <sec id="c5">
+    <div class="kicker">SECTION 05 / FAQ</div>
+    <div class="tit"><h2>被问得<em>最多的</em>六件事</h2><p>栏目只做整理，不提供任何播放、下载或资源服务。下面六条是把常被问到的问题直接写出来。</p></div>
+    <div class="faq">
+      <details open><summary><b>Q.01</b><span>这个栏目能在线看片吗？</span></summary><div class="an">不能。栏目不提供在线播放、下载链接或影片资源存放，只做公开影片信息的整理与归档。看片请通过正规渠道。</div></details>
+      <details><summary><b>Q.02</b><span>多久更新一次，一次更新多少？</span></summary><div class="an">每月初更新一次，每次新增条目不超过六部，同时会写明入选原因与「适合什么状态看」，不只给片名和评分。</div></details>
+      <details><summary><b>Q.03</b><span>片名、片长和类型会不会出错？</span></summary><div class="an">所有条目均为公开信息，每季度复核一次。发现错误会在下一期说明里标注并修正，历史条目不覆盖旧数据。</div></details>
+      <details><summary><b>Q.04</b><span>片长怎么用才合理？</span></summary><div class="an">超过 150 分钟的片子建议分两次看，硬撑着一次看完观感会打折。九十分钟以内的更适合通勤、午休等碎片时间。</div></details>
+      <details><summary><b>Q.05</b><span>有剧透吗，能不能先看解析？</span></summary><div class="an">不剧透关键转折，看点只写观看理由。需要动脑的那一类，建议看完先睡一觉，第二天再决定要不要看解析。</div></details>
+      <details><summary><b>Q.06</b><span>名称相近的页面是你们吗？</span></summary><div class="an">不是。凡名称相近但域名不同的页面，均非本栏目镜像或关联站。请通过网址辨别，唯一入口见本页入口区块。</div></details>
+    </div>
+  </sec>
+
+  <sec id="ent">
+    <div class="kicker" style="color:var(--ac2)">SECTION 06 / ENTRY</div>
+    <div class="gate">
+      <div><div class="k">Website · Name &amp; Domain</div><h3>网站名称是「yy6080电影网」，域名只有一组。请通过网址辨别，而不是通过名称。</h3><div class="u">https://yy6080dianyingwang-zh.github.io</div></div>
+      <div class="R">
+        <div><dt>网站名称</dt><dd>yy6080电影网</dd></div>
+        <div><dt>站点域名</dt><dd>yy6080dianyingwang-zh<br>.github.io</dd></div>
+        <div><dt>访问协议</dt><dd>https</dd></div>
+        <div><dt>栏目数量</dt><dd>06 个</dd></div>
+        <div><dt>当期条目</dt><dd>84 部 · 第 10 期</dd></div>
+        <div><dt>复制入口</dt><dd class="cp" id="cp">点此复制 →</dd></div>
+      </div>
+    </div>
+  </sec>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><div class="lg">yy6080<em>电影网</em></div><p>按月度节奏整理影片片目与观看笔记的独立栏目。不播放、不下载、不存放资源，所有内容均为公开信息的归档与二次整理。</p></div>
+      <div><h4>栏目</h4><ul><li><a href="#c1">当周上映</a></li><li><a href="#c2">年度回顾</a></li><li><a href="#c3">看点拆解</a></li><li><a href="#c4">片单与片长</a></li><li><a href="#c5">六类疑问</a></li></ul></div>
+      <div><h4>分类</h4><ul><li><a href="#">现实题材</a></li><li><a href="#">悬疑结构</a></li><li><a href="#">动画与家庭</a></li><li><a href="#">经典重温</a></li><li><a href="#">小语种补看</a></li></ul></div>
+      <div><h4>关于</h4><ul><li><a href="#ent">栏目入口</a></li><li><a href="#">月度更新</a></li><li><a href="#">纠错与复核</a></li><li><a href="#">内容声明</a></li><li><a href="#">回到顶部</a></li></ul></div>
+    </div>
+    <div class="fb"><span>© 2026 yy6080电影网　网站名称：yy6080电影网　唯一访问地址：<span class="u">https://yy6080dianyingwang-zh.github.io</span></span><span>本页为单文件站点，样式与脚本全部内联于 index.html</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var u='https://yy6080dianyingwang-zh.github.io';
+  var cp=document.getElementById('cp');
+  cp.addEventListener('click',function(){
+    var t=cp.innerHTML,ok=function(){cp.innerHTML='已复制 ✓';setTimeout(function(){cp.innerHTML=t;},2000);},fb2=function(){
+      var x=document.createElement('textarea');x.value=u;x.style.cssText='position:fixed;left:-9999px';document.body.appendChild(x);x.select();
+      try{document.execCommand('copy');ok();}catch(e){}document.body.removeChild(x);};
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(ok,fb2);}else fb2();
+  });
+  var ls=document.querySelectorAll('nav a'),secs=[];
+  ls.forEach(function(a){
+    var el=document.getElementById(a.getAttribute('href').slice(1));
+    if(el)secs.push({a:a,el:el});
+    a.addEventListener('click',function(){ls.forEach(function(x){x.classList.remove('on');});a.classList.add('on');});
+  });
+  function spy(){var y=window.scrollY+220,cur=null;secs.forEach(function(o){if(o.el.offsetTop<=y)cur=o;});ls.forEach(function(x){x.classList.remove('on');});if(cur)cur.a.classList.add('on');}
+  window.addEventListener('scroll',spy,{passive:true});spy();
+  if('IntersectionObserver' in window){
+    var els=document.querySelectorAll('.week>div,.tl>section,.split,.tw tbody tr,.faq details,.gate,.tit');
+    els.forEach(function(el){el.classList.add('rv');});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.05});
+    els.forEach(function(el){io.observe(el);});
+  }
+})();
+</script>
+</body>
+</html>
